@@ -121,6 +121,96 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &79871180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79871181}
+  - component: {fileID: 79871183}
+  - component: {fileID: 79871182}
+  m_Layer: 5
+  m_Name: Info-Sun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &79871181
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79871180}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &79871182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79871180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Merk\xFAr\nPRIEMER: 4 879,4 km\r \n\nMerk\xFAr je mal\xE1
+    kamenn\xE1 plan\xE9ta s povrchom posiatym impaktn\xFDmi kr\xE1termi. \nNem\xE1
+    hust\xFA atmosf\xE9ru, ktor\xE1 by dok\xE1zala regulova\u0165 povrchov\xFA teplotu.
+    Z toho \nd\xF4vodu jej rozdiel kol\xED\u0161e v rozmedz\xED +440 \xB0C po\u010Das
+    d\u0148a a \u2212180 \xB0C v noci. \nNapriek tomu, \u017Ee je Merk\xFAr najbli\u017E\u0161ie
+    k Slnku, nedr\u017E\xED teplotn\xFD rekord medzi \nplan\xE9tami slne\u010Dnej
+    s\xFAstavy. Ten patr\xED Venu\u0161i, ktor\xE1 je od Slnka s\xEDce \u010Falej,
+    ale \npanuje na nej siln\xFD sklen\xEDkov\xFD efekt.\r\n\r\nJeho priemer je 38
+    % priemeru Zeme, \u010Do je 1,4-kr\xE1t viac ako priemer Mesiaca. \nMerk\xFAr
+    m\xE1 vysok\xFA hustotu a slab\xE9, no predsa pr\xEDtomn\xE9 magnetick\xE9 pole.
+    \nVytv\xE1ra ho mas\xEDvne kovov\xE9 jadro vo vn\xFAtri plan\xE9ty. Merk\xFAr
+    obieha okolo Slnka \nnajr\xFDchlej\u0161ie zo v\u0161etk\xFDch plan\xE9t, no
+    jeho rot\xE1cia je, naopak, ve\u013Emi pomal\xE1. \nNem\xE1 \u017Eiadny mesiac."
+--- !u!222 &79871183
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79871180}
+  m_CullTransparentMesh: 0
 --- !u!1 &218932677
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,15 +273,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400818, guid: 684607a10eed8fd4ca28c636950fa092, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 39.399994
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 400818, guid: 684607a10eed8fd4ca28c636950fa092, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.070007
+      value: -2.19
       objectReference: {fileID: 0}
     - target: {fileID: 400818, guid: 684607a10eed8fd4ca28c636950fa092, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9700012
+      value: 0.601
       objectReference: {fileID: 0}
     - target: {fileID: 400818, guid: 684607a10eed8fd4ca28c636950fa092, type: 3}
       propertyPath: m_LocalRotation.x
@@ -517,7 +607,16 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 79871181}
   - {fileID: 1082063956}
+  - {fileID: 1335449737}
+  - {fileID: 2048899718}
+  - {fileID: 1194007274}
+  - {fileID: 1792012276}
+  - {fileID: 1125722259}
+  - {fileID: 960475781}
+  - {fileID: 930923587}
+  - {fileID: 877075430}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -526,6 +625,106 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &877075429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 877075430}
+  - component: {fileID: 877075432}
+  - component: {fileID: 877075431}
+  m_Layer: 5
+  m_Name: Info-Pluto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &877075430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877075429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &877075431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877075429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Pluto\nPRIEMER: 4 879,4 km\r \n\n134340 Pluto je trpasli\u010Dia
+    plan\xE9ta slne\u010Dnej s\xFAstavy. Od svojho \nobjavu v roku 1930 do roku 2006
+    bolo pova\u017Eovan\xE9 za najmen\u0161iu \na v\xE4\u010D\u0161inou najvzdialenej\u0161iu
+    plan\xE9tu slne\u010Dnej s\xFAstavy. \n\r\nPluto je mal\xE9, men\u0161ie ako
+    Mesiac, a ve\u013Emi chladn\xE9 teleso \nskladaj\xFAce sa hlavne z kremi\u010Ditanov
+    a s\u010Dasti z \u013Eadu. M\xE1 ve\u013Emi \nriedku atmosf\xE9ru obsahuj\xFAcu
+    hlavne dus\xEDk, met\xE1n a oxid uho\u013Enat\xFD. \nPomenovanie dostalo pod\u013Ea
+    r\xEDmskeho boha podsvetia, ktor\xFD bol \ntoto\u017En\xFD s gr\xE9ckym H\xE1dom.
+    Od roku 1978 je zn\xE1my jeho najv\xE4\u010D\u0161\xED \nmesiac Ch\xE1ron, ktor\xFD
+    je v pomere k obiehan\xE9mu telesu pozoruhodne \nve\u013Ek\xFD a \u0165a\u017Eisko
+    ich vz\xE1jomn\xE9ho obehu le\u017E\xED mimo Pluta. Preto sa o \ns\xFAstave Pluto-Ch\xE1ron
+    hovor\xED ako o bin\xE1rnej plan\xE9tke. Obe teles\xE1 s\xFA \nv stacion\xE1rnej
+    rot\xE1cii. V roku 2005 Hubblov vesm\xEDrny \u010Falekoh\u013Ead \nobjavil \u010Fal\u0161ie
+    dva mali\u010Dk\xE9 mesiace, v rokoch 2011 a 2012 \u010Fal\u0161ie dva, \ntak\u017Ee
+    Pluto m\xE1 v s\xFA\u010Dasnosti (september 2019) p\xE4\u0165 zn\xE1mych \nprirodzen\xFDch
+    satelitov.\r\n\r\nRota\u010Dn\xE1 os Pluta m\xE1 tak\xFD ve\u013Ek\xFD sklon,
+    \u017Ee prakticky le\u017E\xED v rovine ekliptiky \npodobne, ako je tomu u Ur\xE1nu.
+    Rovnako ako Ur\xE1n a Venu\u0161a, aj Pluto \nrotuje retrogr\xE1dne, \u010Di\u017Ee
+    v protismere svojho obehu. Obe\u017En\xE1 dr\xE1ha Pluta \nje v porovnan\xED
+    s plan\xE9tami tie\u017E netypick\xE1. Je ve\u013Emi v\xFDstredn\xE1 a kri\u017Euje
+    \nrovinu obe\u017Enej dr\xE1hy (nie v\u0161ak samotn\xFA dr\xE1hu) poslednej
+    plan\xE9ty Nept\xFAna, \nv\u010Faka \u010Domu sa Pluto pri svojom obehu dost\xE1va
+    na nieko\u013Eko rokov k Slnku \nbli\u017E\u0161ie ne\u017E Nept\xFAn."
+--- !u!222 &877075432
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877075429}
+  m_CullTransparentMesh: 0
 --- !u!1 &903436190
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +824,200 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &930923586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930923587}
+  - component: {fileID: 930923589}
+  - component: {fileID: 930923588}
+  m_Layer: 5
+  m_Name: Info-Neptune
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &930923587
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930923586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &930923588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930923586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Nept\xFAn\nPRIEMER: 49 528 km\n\nNept\xFAn je \xF4sma a najvzdialenej\u0161ia
+    plan\xE9ta slne\u010Dnej s\xFAstavy. \nRozhodlo o tom hlasovanie na 26. kongrese
+    Medzin\xE1rodnej \nastronomickej \xFAnie v Prahe 24. augusta 2006. Dovtedy bolo
+    \nposlednou plan\xE9tou slne\u010Dnej s\xFAstavy Pluto.\r\n\r\nPlan\xE9ta bola
+    objaven\xE1 23. septembra 1846 Johannom Gallom \na \u0161tudentom astron\xF3mie
+    Louisom Arrestom. Nept\xFAn je prvou \nplan\xE9tou objavenou sk\xF4r na z\xE1klade
+    matematick\xFDch v\xFDpo\u010Dtov \nako priamym pozorovan\xEDm. Astron\xF3movia
+    odvodili jeho \nexistenciu z por\xFAch v dr\xE1he Ur\xE1na.\n\r\nSo svoj\xEDm
+    rovn\xEDkov\xFDm priemerom 49 528 km je \u0161tvrtou \nnajv\xE4\u010D\u0161ou
+    plan\xE9tou, jeho hmotnos\u0165 v\u0161ak z neho rob\xED tretiu \nnajhmotnej\u0161iu
+    plan\xE9tu slne\u010Dnej s\xFAstavy. Nept\xFAn je 17-kr\xE1t \u0165a\u017E\u0161\xED
+    \nako Zem a iba o nie\u010Do prekon\xE1va svoju susedn\xFA plan\xE9tu Ur\xE1n
+    \n(14-kr\xE1t \u0165a\u017E\u0161\xED ako Zem). Plan\xE9ta je pomenovan\xE1 pod\u013Ea
+    staror\xEDmskeho \nboha mora Nept\xFAna. Svojou stavbou, hmotnos\u0165ou a chemick\xFDm
+    \nzlo\u017Een\xEDm sa zara\u010Fuje k plynn\xFDm obrom (jovi\xE1lnym plan\xE9tam).
+    Jeho \nastronomick\xFD symbol je trojzubec \u2646."
+--- !u!222 &930923589
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930923586}
+  m_CullTransparentMesh: 0
+--- !u!1 &960475780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960475781}
+  - component: {fileID: 960475783}
+  - component: {fileID: 960475782}
+  m_Layer: 5
+  m_Name: Info-Uranus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &960475781
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960475780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &960475782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960475780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Ur\xE1n\nPRIEMER: 51 118 km\n\nUr\xE1n je siedma plan\xE9ta
+    od Slnka, tretia najv\xE4\u010D\u0161ia a \u0161tvrt\xE1 \nnajhmotnej\u0161ia
+    plan\xE9ta v slne\u010Dnej s\xFAstave. Patr\xED medzi plynn\xE9 obry \na spolu
+    s Nept\xFAnom aj medzi tzv. \u013Eadov\xE9 obry. Meno m\xE1 po gr\xE9ckom \nbohovi
+    nebies Ur\xE1novi, \u010Do je ojedinel\xE9 \u2013 ostatn\xE9 plan\xE9ty s\xFA
+    \npomenovan\xE9 po r\xEDmskych bohoch. Symbolom plan\xE9ty Ur\xE1n je znak \nAstronomick\xFD
+    symbol Ur\xE1na (pou\u017E\xEDvan\xFD v astron\xF3mii) alebo \u2645 \n(pou\u017E\xEDvan\xFD
+    v astrol\xF3gii). Je to najbli\u017E\u0161ia plan\xE9ta k Zemi, ktor\xE1 nebola
+    \n\u013Eu\u010Fom zn\xE1ma u\u017E od staroveku. Aj napriek tomu, \u017Ee Ur\xE1n
+    je mo\u017En\xE9 za \npriazniv\xFDch podmienok pozorova\u0165 vo\u013En\xFDm
+    okom na no\u010Dnej oblohe, \nantick\xED astron\xF3movia ho kv\xF4li pomalej
+    r\xFDchlosti a n\xEDzkej jasnosti \nnepova\u017Eovali za plan\xE9tu, ale za hviezdu.
+    Objav Ur\xE1na ohl\xE1sil \nWilliam Herschel 13. marca 1781, \u010D\xEDm prv\xFDkr\xE1t
+    v modernej dobe \nposunul zn\xE1me hranice slne\u010Dnej s\xFAstavy.\r\n\r\nChemick\xFDm
+    zlo\u017Een\xEDm sa Ur\xE1n podob\xE1 Nept\xFAnu. Obe plan\xE9ty maj\xFA \nrozdielne
+    celkov\xE9 zast\xFApenie prvkov oproti Jupiteru \u010Di Saturnu. \nUr\xE1n m\xE1
+    podobn\xE9 zlo\u017Eenie atmosf\xE9ry ako Jupiter \u010Di Saturn. Tvoria ju \npreva\u017Ene
+    plynn\xE9 formy vod\xEDka a h\xE9lia, ale obsahuje aj v\xFDrazn\xFD podiel \nvody,
+    amoniaku a met\xE1nu so stopami \u010Fal\u0161\xEDch uh\u013Eovod\xEDkov. Atmosf\xE9ra
+    \nUr\xE1nu je najchladnej\u0161ou v slne\u010Dnej s\xFAstave, minim\xE1lne teploty
+    sa \npohybuj\xFA okolo 49 K. Jej \u0161trukt\xFAra je vrstevnat\xE1: v najni\u017E\u0161\xEDch
+    poschodiach \nsa nach\xE1dzaj\xFA mraky vody, vo vrchn\xFDch poschodiach mraky
+    tvoren\xE9 \nhlavne met\xE1nom. Vn\xFAtro plan\xE9ty je pravdepodobne zlo\u017Een\xE9
+    predov\u0161etk\xFDm \nz \u013Eadu a kamenia."
+--- !u!222 &960475783
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960475780}
+  m_CullTransparentMesh: 0
 --- !u!1 &1082063955
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +1030,7 @@ GameObject:
   - component: {fileID: 1082063958}
   - component: {fileID: 1082063957}
   m_Layer: 5
-  m_Name: text
+  m_Name: Info-Merkur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,15 +1045,15 @@ RectTransform:
   m_GameObject: {fileID: 1082063955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
   m_Children: []
   m_Father: {fileID: 499295828}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -256, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082063957
 MonoBehaviour:
@@ -675,7 +1068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -683,18 +1076,30 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 150
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 150
     m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Maria
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Merk\xFAr\nPRIEMER: 4 879,4 km\r \n\nMerk\xFAr je mal\xE1
+    kamenn\xE1 plan\xE9ta s povrchom posiatym impaktn\xFDmi kr\xE1termi. \nNem\xE1
+    hust\xFA atmosf\xE9ru, ktor\xE1 by dok\xE1zala regulova\u0165 povrchov\xFA teplotu.
+    Z toho \nd\xF4vodu jej rozdiel kol\xED\u0161e v rozmedz\xED +440 \xB0C po\u010Das
+    d\u0148a a \u2212180 \xB0C v noci. \nNapriek tomu, \u017Ee je Merk\xFAr najbli\u017E\u0161ie
+    k Slnku, nedr\u017E\xED teplotn\xFD rekord medzi \nplan\xE9tami slne\u010Dnej
+    s\xFAstavy. Ten patr\xED Venu\u0161i, ktor\xE1 je od Slnka s\xEDce \u010Falej,
+    ale \npanuje na nej siln\xFD sklen\xEDkov\xFD efekt.\r\n\r\nJeho priemer je 38
+    % priemeru Zeme, \u010Do je 1,4-kr\xE1t viac ako priemer Mesiaca. \nMerk\xFAr
+    m\xE1 vysok\xFA hustotu a slab\xE9, no predsa pr\xEDtomn\xE9 magnetick\xE9 pole.
+    \nVytv\xE1ra ho mas\xEDvne kovov\xE9 jadro vo vn\xFAtri plan\xE9ty. Merk\xFAr
+    obieha okolo Slnka \nnajr\xFDchlej\u0161ie zo v\u0161etk\xFDch plan\xE9t, no
+    jeho rot\xE1cia je, naopak, ve\u013Emi pomal\xE1. \nNem\xE1 \u017Eiadny mesiac."
 --- !u!222 &1082063958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -702,6 +1107,296 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082063955}
+  m_CullTransparentMesh: 0
+--- !u!1 &1125722258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1125722259}
+  - component: {fileID: 1125722261}
+  - component: {fileID: 1125722260}
+  m_Layer: 5
+  m_Name: Info-Saturn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &1125722259
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125722258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1125722260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125722258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Saturn\nPRIEMER: 120 536 km\r\n\nSaturn je \u0161iesta plan\xE9ta
+    Slne\u010Dnej s\xFAstavy v porad\xED od Slnka, \npo Jupiteri druh\xE1 najv\xE4\u010D\u0161ia
+    z plan\xE9t. Je zn\xE1ma i z prehistorick\xE9ho obdobia. \nPomenovan\xFD bol
+    pod\u013Ea r\xEDmskeho boha Saturna, ktor\xFD je obdobou gr\xE9ckeho \nKrona.
+    Astronomick\xFD symbol pre Saturn je \u2644.\r\n\r\nSaturn patr\xED medzi jovi\xE1lne
+    plan\xE9ty, to znamen\xE1, \u017Ee nem\xE1 pevn\xFD povrch, \nale len hust\xFA
+    atmosf\xE9ru, ktor\xE1 postupne prech\xE1dza do pl\xE1\u0161\u0165a. \nAtmosf\xE9ra
+    je tvoren\xE1 preva\u017Ene vod\xEDkom, ktor\xFD tvor\xED 96,3 % jej objemu.
+    \nVidite\u013En\xFD povrch plan\xE9ty tvor\xED svetlo\u017Elt\xE1 vrstva mrakov
+    s nejasn\xFDmi \np\xE1smi r\xF4znych odtie\u0148ov, ktor\xE9 s\xFA rovnobe\u017En\xE9
+    s rovn\xEDkom. Teplota v \nhornej obla\u010Dnej vrstve dosahuje \u2212140 \xB0C.
+    Hmotnos\u0165 plan\xE9ty je \npribli\u017Ene 95-kr\xE1t v\xE4\u010D\u0161ia ako
+    hmotnos\u0165 Zeme, m\xE1 v\u0161ak zo v\u0161etk\xFDch plan\xE9t \nnajmen\u0161iu
+    hustotu: len 0,6873 g/cm\xB3 a ako jedin\xE1 plan\xE9ta v slne\u010Dnej \ns\xFAstave
+    je \u013Eah\u0161\xED ne\u017E voda. Saturn je zn\xE1my najmohutnej\u0161ou s\xFAstavou
+    \nprstencov zo v\u0161etk\xFDch plan\xE9t slne\u010Dnej s\xFAstavy. Jeho hlavn\xE9
+    prstence, \nktor\xE9 s\xFA ozna\u010Den\xE9 ve\u013Ek\xFDmi p\xEDsmenami mo\u017Eno
+    pozorova\u0165 zo Zeme u\u017E aj \nmal\xFDm \u010Falekoh\u013Eadom. Okolo plan\xE9ty
+    obieha tie\u017E po\u010Detn\xE1 rodina \nmesiacov, z ktor\xFDch najv\xE4\u010D\u0161\xED
+    je Titan, jedin\xFD mesiac v slne\u010Dnej s\xFAstave \ns hustou atmosf\xE9rou."
+--- !u!222 &1125722261
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125722258}
+  m_CullTransparentMesh: 0
+--- !u!1 &1194007273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1194007274}
+  - component: {fileID: 1194007276}
+  - component: {fileID: 1194007275}
+  m_Layer: 5
+  m_Name: Info-Mars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &1194007274
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194007273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1194007275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194007273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Mars\nPRIEMER: 6 804,9 km\n\nMars je \u0161tvrt\xE1 plan\xE9ta
+    slne\u010Dnej s\xFAstavy v porad\xED od Slnka. \nJe to druh\xE1 najmen\u0161ia
+    plan\xE9ta (po Merk\xFAre). Pomenovan\xE1 je po Marsovi, \nstaror\xEDmskom bohovi
+    vojny. Jeho dr\xE1ha sa nach\xE1dza a\u017E za dr\xE1hou Zeme. \nIde o plan\xE9tu
+    terestrick\xE9ho typu, to znamen\xE1, \u017Ee m\xE1 pevn\xFD horninov\xFD povrch
+    \npokryt\xFD impaktn\xFDmi kr\xE1termi, vysok\xFDmi sopkami, hlbok\xFDmi ka\u0148onmi
+    a \u010Fal\u0161\xEDmi \n\xFAtvarmi. Obiehaj\xFA ho dva mesiace nepravideln\xE9ho
+    tvaru pomenovan\xE9 \nFobos a Deimos.\r\n\r\nV obdob\xED, ke\u010F je Mars v
+    opoz\xEDcii (nach\xE1dza sa na opa\u010Dnej strane oblohy \nako Slnko), je vidite\u013En\xFD
+    na oblohe po cel\xFA noc. Prv\xE9 p\xEDsomn\xE9 z\xE1znamy \no plan\xE9te a jej
+    pozorovan\xED poch\xE1dzaj\xFA z obdobia prv\xFDch civiliz\xE1ci\xED. V\u0161etky
+    \nve\u013Ek\xE9 starovek\xE9 civiliz\xE1cie, Egyp\u0165ania, Babylon\u010Dania
+    a Gr\xE9ci, vedeli o tejto \n\u201Eputuj\xFAcej hviezde\u201C a d\xE1vali jej
+    svoje pomenovania. Pova\u017Eovali ju za symbol \noh\u0148a a krvi, preto\u017Ee
+    horniny, p\xF4da a obloha na plan\xE9te maj\xFA \u010Derven\xFD, alebo \nru\u017Eov\xFD
+    odtie\u0148. Naz\xFDvali ju \u201E\u010Cerven\xFD objekt\u201C, \u201ENebesk\xFD
+    ohe\u0148\u201C, \n\u201EHviezda smrti\u201C alebo \u201EBoh vojny\u201C."
+--- !u!222 &1194007276
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194007273}
+  m_CullTransparentMesh: 0
+--- !u!1 &1335449736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335449737}
+  - component: {fileID: 1335449739}
+  - component: {fileID: 1335449738}
+  m_Layer: 5
+  m_Name: Info-Venus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &1335449737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335449736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1335449738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335449736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Venu\u0161a\nPRIEMER: 12 104 km\r \n\nVenu\u0161a je druh\xE1
+    plan\xE9ta slne\u010Dnej s\xFAstavy (v porad\xED od Slnka), po Slnku \na po Mesiaci
+    najjasnej\u0161\xED objekt vidite\u013En\xFD zo Zeme. Pomenovan\xE1 je po \nstaror\xEDmskej
+    bohyni l\xE1sky.\r\n\r\nJej obe\u017En\xE1 dr\xE1ha sa nach\xE1dza vn\xFAtri
+    dr\xE1hy Zeme, to znamen\xE1, \u017Ee nikdy \nsa na oblohe nevzdiali \u010Faleko
+    od Slnka. Maxim\xE1lna uhlov\xE1 vzdialenos\u0165 \nVenu\u0161e od Slnka m\xF4\u017Ee
+    by\u0165 a\u017E 48\xB0. Podobne ako Mesiac vrh\xE1 na Zem \ntie\u0148 vidite\u013En\xFD
+    vo\u013En\xFDm okom. Je to terestri\xE1lna plan\xE9ta, ve\u013Ekos\u0165ou a
+    \nzlo\u017Een\xEDm ve\u013Emi podobn\xE1 Zemi; niekedy ju preto naz\xFDvame \n\u201Esesterskou
+    plan\xE9tou\u201C Zeme. Aj ke\u010F orbity v\u0161etk\xFDch ostatn\xFDch plan\xE9t
+    s\xFA \nelipsovit\xE9, orbita Venu\u0161e je jedin\xE1 takmer kru\u017Enica,
+    so stredom Slnka iba \no 0,7 % mimo skuto\u010Dn\xE9ho stredu Venu\u0161inej
+    obe\u017Enej dr\xE1hy. Plan\xE9ta je \nobklopen\xE1 ve\u013Emi hustou atmosf\xE9rou,
+    ktor\xE1 na jej povrchu udr\u017Euje \nnajvy\u0161\u0161ie teploty spomedzi v\u0161etk\xFDch
+    plan\xE9t v slne\u010Dnej s\xFAstave.\r\n\r\nPreto\u017Ee je Venu\u0161a k Slnku
+    bli\u017E\u0161ie ako Zem, n\xE1jdeme ju na oblohe takmer \nv\u017Edy bl\xEDzko
+    pri Slnku, tak\u017Ee ju je mo\u017En\xE9 zo Zeme vidie\u0165 iba r\xE1no pred
+    \nv\xFDchodom Slnka alebo ve\u010Der po z\xE1pade Slnka. Preto je niekedy ozna\u010Dovan\xE1
+    \nako \u201EZorni\u010Dka\u201C alebo \u201EVe\u010Dernica\u201C, a ke\u010F
+    sa objav\xED, ide o z\u010Faleka najsilnej\u0161\xED \nbodov\xFD zdroj svetla
+    na oblohe. V\xFDnimo\u010Dne mo\u017Eno Venu\u0161u vo\u013En\xFDm okom \nuvidie\u0165
+    aj vo dne."
+--- !u!222 &1335449739
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335449736}
   m_CullTransparentMesh: 0
 --- !u!1 &1682172092
 GameObject:
@@ -730,7 +1425,7 @@ RectTransform:
   m_GameObject: {fileID: 1682172092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.045891, y: 0.045891, z: 0.045891}
+  m_LocalScale: {x: 0.03729883, y: 0.03729883, z: 0.03729883}
   m_Children: []
   m_Father: {fileID: 903436194}
   m_RootOrder: 0
@@ -776,6 +1471,105 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1682172092}
+  m_CullTransparentMesh: 0
+--- !u!1 &1792012275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792012276}
+  - component: {fileID: 1792012278}
+  - component: {fileID: 1792012277}
+  m_Layer: 5
+  m_Name: Info-Jupiter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &1792012276
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792012275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1792012277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792012275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Jupiter\nPRIEMER: 142 984 km\n\nJupiter je piata plan\xE9ta
+    v porad\xED od Slnka, najv\xE4\u010D\u0161ia a najhmotnej\u0161ia \nplan\xE9ta
+    na\u0161ej slne\u010Dnej s\xFAstavy. Je pomenovan\xFD po r\xEDmskom bohovi \nJupiterovi.
+    Symbolom plan\xE9ty je \u0161tylizovan\xE9 zn\xE1zornenie Jupiterovho \nbo\u017Esk\xE9ho
+    blesku (v Unicode: \u2643).\r\n\r\nJupiter m\xE1 chemick\xE9 zlo\u017Eenie podobn\xE9
+    Slnku a \u010Fal\u0161\xEDm hviezdam. \nL\xED\u0161i sa od nich najm\xE4 n\xEDzkou
+    hmotnos\u0165ou, ktor\xE1 nesta\u010D\xED na vytvorenie \npodmienok pre termojadrov\xE9
+    reakcie prebiehaj\xFAce vo v\u0161etk\xFDch hviezdach \nhlavnej postupnosti.
+    Neexistuje presn\xE1 defin\xEDcia odli\u0161uj\xFAca ve\u013Ek\xE9 hmotn\xE9
+    \nplan\xE9ty ako Jupiter od hned\xFDch trpasl\xEDkov, \u010Do s\xFA prechodn\xE9
+    \xFAtvary medzi \nplan\xE9tami a hviezdami. V ka\u017Edom pr\xEDpade by Jupiter
+    potreboval by\u0165 aspo\u0148 \n80\xD7 hmotnej\u0161\xED, aby sa mohol sta\u0165
+    hviezdou. Plan\xE9ty, ktor\xE9 s\xFA Jupiteru \npodobn\xE9 hmotnos\u0165ou, rozmermi
+    a zlo\u017Een\xEDm, sa naz\xFDvaj\xFA jovi\xE1lne.\r\n\r\nJupiter je prvou plan\xE9tou
+    od Slnka, ktor\xE1 nem\xE1 pevn\xFD povrch. Jeho \nb\xFArliv\xE1 atmosf\xE9ra
+    plynule prech\xE1dza do pl\xE1\u0161\u0165a a vo v\xE4\u010D\u0161\xEDch h\u013Abkach
+    do \nhor\xFAceho jadra. Rot\xE1cia plan\xE9ty sp\xF4sobila, \u017Ee sa v jej
+    atmosf\xE9re utvorili \ngigantick\xE9, farebne jasne odl\xED\u0161en\xE9 \u0161trukt\xFAry
+    naz\xFDvan\xE9 p\xE1sy a z\xF3ny. \nOkrem nich mo\u017Eno u\u017E mal\xFDm \u010Falekoh\u013Eadom
+    pozorova\u0165 na Jupiteri \n\u010Fal\u0161ie b\xFArkov\xE9 \u0161trukt\xFAry,
+    napr\xEDklad zn\xE1mu Ve\u013Ek\xFA \u010Derven\xFA \u0161kvrnu, \nktor\xE1 je
+    z nich najv\xE4\u010D\u0161ia."
+--- !u!222 &1792012278
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792012275}
   m_CullTransparentMesh: 0
 --- !u!1 &1930650406
 GameObject:
@@ -921,13 +1715,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985441281}
-  m_LocalRotation: {x: 0.022363126, y: -0.19116293, z: 0.02211996, w: 0.98105425}
-  m_LocalPosition: {x: -437, y: 168.2, z: 408}
+  m_LocalRotation: {x: 0.016036164, y: -0.21181779, z: -0.011157266, w: 0.97711396}
+  m_LocalPosition: {x: -48.5, y: 168.2, z: 50.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 3.0000002, y: -22, z: 2}
+  m_LocalEulerAnglesHint: {x: 1.5250001, y: -24.484001, z: -1.639}
 --- !u!114 &1985441285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -958,3 +1752,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db9fc27b0a735948bc60a1cfb64c14f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2048899717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2048899718}
+  - component: {fileID: 2048899720}
+  - component: {fileID: 2048899719}
+  m_Layer: 5
+  m_Name: Info-Clouds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!224 &2048899718
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048899717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.11414665, y: 0.11414665, z: 0.11414665}
+  m_Children: []
+  m_Father: {fileID: 499295828}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -610, y: 133}
+  m_SizeDelta: {x: 170, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2048899719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048899717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 150
+    m_Alignment: 0
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.8
+  m_Text: "PLAN\xC9TA: Zem\nPRIEMER: 12 756 km\r \n\nZem je v porad\xED tretia plan\xE9ta
+    slne\u010Dnej s\xFAstavy. Je to z\xE1rove\u0148 jedin\xE1 \nplan\xE9ta, na ktorej
+    je pod\u013Ea s\xFA\u010Dasn\xFDch vedeck\xFDch poznatkov voda v \nkvapalnom
+    skupenstve a \u017Eivot. Zem je predmetom sk\xFAmania napr\xEDklad \nkozmog\xF3nie,
+    geol\xF3gie, paleontol\xF3gie \u010Di geografie.\r\n\r\nV strede Zeme sa nach\xE1dza
+    hor\xFAce hust\xE9 jadro, ktor\xE9 obklopuje chladnej\u0161\xED \npl\xE1\u0161\u0165
+    z roztaven\xFDch horn\xEDn. Na povrchu je k\xF4ra, ktor\xE1 dosahuje r\xF4znu
+    hr\xFAbku \nv z\xE1vislosti od miesta (pod oce\xE1nmi je v\u0161eobecne ten\u0161ia
+    ako pod kontinentmi).\nV\u010Faka pevn\xE9mu povrchu a vn\xFAtorn\xE9mu zlo\u017Eeniu
+    Zem zara\u010Fujeme medzi \nterestri\xE1lne plan\xE9ty. Zem je najv\xE4\u010D\u0161ia
+    spomedzi terestri\xE1lnych plan\xE9t slne\u010Dnej \ns\xFAstavy a tie\u017E jedin\xE1
+    zn\xE1ma plan\xE9ta, na ktorej sa nach\xE1dza voda vo v\u0161etk\xFDch \ntroch
+    skupenstv\xE1ch. V\xE4\u010D\u0161ina jej povrchu je pokryt\xE1 kvapaln\xFDm
+    oce\xE1nom, \u010Do \njej pri poh\u013Eade zo vzdialen\xE9ho vesm\xEDru d\xE1va
+    charakteristick\xFA modr\xFA farbu. \nV bl\xEDzkosti rota\u010Dn\xFDch p\xF3lov
+    je oce\xE1n, resp. pevn\xFD povrch trvale zamrznut\xFD \na vytv\xE1ra biele pol\xE1rne
+    \u010Diapky. Zem je obklopen\xE1 atmosf\xE9rou, ktor\xE1 vo \nve\u013Ek\xFDch
+    vzdialenostiach od povrchu pozvo\u013Ena prech\xE1dza do \nmedziplanet\xE1rneho
+    prostredia. Po prv\xFDkr\xE1t Zem ako celok na vlastn\xE9 \no\u010Di videla pos\xE1dka
+    kozmickej lode Apollo 8, ktor\xE1 ako prv\xE1 opustila \nobe\u017En\xFA dr\xE1hu
+    Zeme a vzdialila sa od nej nato\u013Eko, \u017Ee sa zmestila do \nzorn\xE9ho
+    po\u013Ea \u013Eudsk\xE9ho oka.\r\n\r\nAstronomick\xFD symbol Zeme je kr\xED\u017E
+    vn\xFAtri kruhu Jej gr\xE9cke meno \nGaia znamen\xE1 matka. Gaia bola v staroveku
+    ve\u013Emi uctievanou \nbohy\u0148ou Zeme, ktorej zasv\xE4covali mno\u017Estvo
+    chr\xE1mov a olt\xE1rov. Gaia \nd\xE1vala \u017Eivot v\u0161etk\xFDm tvorom,
+    ale ne\u013E\xFAtostne ho potom brala sp\xE4\u0165 do \nsvojho lona. Bola teda
+    z\xE1rove\u0148 bohy\u0148ou \u017Eivota a smrti."
+--- !u!222 &2048899720
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048899717}
+  m_CullTransparentMesh: 0

@@ -7,30 +7,38 @@ public class Teleporting : MonoBehaviour
     public RaycastHit lastRaycastHit;
     private int timeCounter = 0;
     private string currentFocus = "";
+    private GameObject currentModal;
+
+    private GameObject sun;
+    private GameObject merkur;
+    private GameObject venus;
+    private GameObject clouds;
+    private GameObject mars;
+    private GameObject jupiter;
+    private GameObject saturn;
+    private GameObject uranus;
+    private GameObject neptune;
+    private GameObject pluto;
+    private bool show = false;
 
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         //Cursor.visible = false;
-        
+        sun     = GameObject.Find("Info-Sun");
+        merkur  = GameObject.Find("Info-Merkur");
+        venus   = GameObject.Find("Info-Venus");
+        clouds  = GameObject.Find("Info-Clouds");
+        mars    = GameObject.Find("Info-Mars");
+        jupiter = GameObject.Find("Info-Jupiter");
+        saturn  = GameObject.Find("Info-Saturn");
+        uranus  = GameObject.Find("Info-Uranus");
+        neptune = GameObject.Find("Info-Neptune");
+        pluto   = GameObject.Find("Info-Pluto");
+
+        sun.SetActive(false); merkur.SetActive(false); venus.SetActive(false); clouds.SetActive(false); mars.SetActive(false); jupiter.SetActive(false); saturn.SetActive(false); uranus.SetActive(false);
+        neptune.SetActive(false); pluto.SetActive(false);
     }
-
-    /*private GameObject GetLookedAtObject(){
-        Vector3 origin = transform.position;
-        Vector3 direction = Camera.main.transform.forward;
-        float range = 1000;
-        if (Physics.Raycast (origin,direction,out lastRaycastHit)){
-            return lastRaycastHit.collider.gameObject;
-        }
-        else {
-            return null;
-        }
-    }*/
-
-    /*private void TeleportToLookAt() {
-        transform.position = lastRaycastHit.point + lastRaycastHit.normal * 5;
-    }*/
 
     private void changeCamera(Vector3 position, Vector3 angle){
         Camera.main.transform.position = position;
@@ -38,77 +46,80 @@ public class Teleporting : MonoBehaviour
         timeCounter = 0;
     }
 
+    private void showText(string name){
+        print("Here ich bin");
+        if (currentModal != null) currentModal.SetActive(false);
+        if (name == "Sun")          {sun.SetActive(true);       currentModal = sun;}         
+        else if (name == "Mercury") {merkur.SetActive(true);    currentModal = merkur;} 
+        else if (name == "Venus")   {venus.SetActive(true);     currentModal = venus;}  
+        else if (name == "Clouds")  {clouds.SetActive(true);    currentModal = clouds;}
+        else if (name == "Mars")    {mars.SetActive(true);      currentModal = mars;}
+        else if (name == "Jupiter") {jupiter.SetActive(true);   currentModal = jupiter;} 
+        else if (name == "Saturn")  {saturn.SetActive(true);    currentModal = saturn;} 
+        else if (name == "Uranus")  {uranus.SetActive(true);    currentModal = uranus;} 
+        else if (name == "Neptune") {neptune.SetActive(true);   currentModal = neptune;}
+        else if (name == "Pluto")   {pluto.SetActive(true);     currentModal = pluto;}  
+    }
+
     private void recognizePlanet(string name){
-        if (name != currentFocus) {
-            if (name == "Mercury") changeCamera(new Vector3(-432, 168, 265), new Vector3(6,8,2));
-            else if (name == "Venus") changeCamera(new Vector3(-317, 168, 324), new Vector3(6,8,2));
-            else if (name == "Clouds") changeCamera(new Vector3(-432,169,422), new Vector3(6,8,2));
-            else if (name == "Mars") changeCamera(new Vector3(-571, 168, 559), new Vector3(6, 31, 2));
-            else if (name == "Jupiter") changeCamera(new Vector3(-340, 172, 572), new Vector3(6,4,2));
-            else if (name == "Saturn") changeCamera(new Vector3(-772, 190, 591), new Vector3(31,5,4));
-            else if (name == "Uranus") changeCamera(new Vector3(-246, 169, 625), new Vector3(3,4,2));
-            else if (name == "Neptune") changeCamera(new Vector3(-103, 169, 705), new Vector3(6,8,2));
-            else if (name == "Pluto") changeCamera(new Vector3(-599, 168, 815), new Vector3(3,-22,2));
-            currentFocus = name;
-        } 
+        if (name == "Sun") changeCamera(new Vector3(-369, 168, 50), new Vector3(2,-24,-2));
+        else if (name == "Mercury") changeCamera(   new Vector3(-432, 168, 265), new Vector3(-5,-19, 0) );
+        else if (name == "Venus") changeCamera(     new Vector3(-317, 169, 320), new Vector3(10,-22, 0) );
+        else if (name == "Clouds") changeCamera(    new Vector3(-432, 169, 422), new Vector3(17,-23, 0) );
+        else if (name == "Mars") changeCamera(      new Vector3(-571, 168, 559), new Vector3(-5, -6, 0) );
+        else if (name == "Jupiter") changeCamera(   new Vector3(-340, 172, 572), new Vector3(2, -8, 0)  );
+        else if (name == "Saturn") changeCamera(    new Vector3(-772, 190, 591), new Vector3(25, -20, 0));
+        else if (name == "Uranus") changeCamera(    new Vector3(-246, 169, 625), new Vector3(0,-18, 0)  );
+        else if (name == "Neptune") changeCamera(   new Vector3(-103, 169, 705), new Vector3(0, -21, 0) );
+        else if (name == "Pluto") changeCamera(     new Vector3(-599, 168, 815), new Vector3(-5, -60, 2));
+        currentFocus = name;
     }
 
     // Update is called once per frame
     void Update() {
-        /*if (Input.GetMouseButtonDown(0)){
-            if (GetLookedAtObject() != null){
-                TeleportToLookAt();
-            }
-        }*/
 
         RaycastHit hit;
-        float thickness = 50f;
         Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
         Debug.DrawRay(transform.position,forward, Color.green);
 
         if(Physics.Raycast(transform.position, forward, out hit)){
             timeCounter++;
-            print(" Object: " + hit.collider.gameObject.name);
             string hitObject = hit.collider.gameObject.name;
 
             if (timeCounter == 500){
-                recognizePlanet(hitObject);
+                //Ak idem prvy krat na planetu
+                if (name != currentFocus) {
+                    recognizePlanet(hitObject);
+                    showText(hitObject);
+                }
+                //chcem zborazit iba modal
+                else {
+                    //ak som v blizkosti planety, zobrazim modal
+                    float targetX = hit.collider.gameObject.transform.position.x;
+                    float targetY = hit.collider.gameObject.transform.position.y;
+                    float targetZ = hit.collider.gameObject.transform.position.z;
+
+                    float cameraX = Camera.main.transform.position.x;
+                    float cameraY = Camera.main.transform.position.y;
+                    float cameraZ = Camera.main.transform.position.z;
+
+                    int accuracy = 50;
+                    
+                    if ((cameraX <= targetX + accuracy && cameraX >= targetX - accuracy) &&
+                        (cameraY <= targetY + accuracy && cameraY >= targetY - accuracy) &&
+                        (cameraZ <= targetZ + accuracy && cameraZ >= targetZ - accuracy)){
+                            showText(hitObject);
+                        }
+                }
             }
         }
         else {
+            if (currentModal != null){
+                //currentModal.SetActive(false);
+            }
             timeCounter = 0;
         }
     }
 }
-
-/*
-Merkur
-(-432, 168.4, 265)
-(6,8,2)
-Venusa
-(-317, 168.5, 324)
-(6,8,2)
-Zem
-(-432,169,422)
-(6,8,2)
-Mars
-(-571.5, 168.5, 559)
-(6, 31, 2)
-Jupiter
-(-340, 172, 572)
-(6,4,2)
-Saturn
-(-772, 190, 591)
-(31.5.4)
-Uran
-(-246, 169, 625)
-(3,4,2)
-Neptun
-(-103, 169, 705)
-(3,4,2)
-Pluto
-(-599.5, 168.2, 815)
-(3, -22, 2)
-*/
 
 
