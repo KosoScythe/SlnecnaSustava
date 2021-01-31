@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -610, y: 133}
+  m_AnchoredPosition: {x: -268, y: -98}
   m_SizeDelta: {x: 170, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79871182
@@ -190,19 +190,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 0.8
-  m_Text: "PLAN\xC9TA: Merk\xFAr\nPRIEMER: 4 879,4 km\r \n\nMerk\xFAr je mal\xE1
-    kamenn\xE1 plan\xE9ta s povrchom posiatym impaktn\xFDmi kr\xE1termi. \nNem\xE1
-    hust\xFA atmosf\xE9ru, ktor\xE1 by dok\xE1zala regulova\u0165 povrchov\xFA teplotu.
-    Z toho \nd\xF4vodu jej rozdiel kol\xED\u0161e v rozmedz\xED +440 \xB0C po\u010Das
-    d\u0148a a \u2212180 \xB0C v noci. \nNapriek tomu, \u017Ee je Merk\xFAr najbli\u017E\u0161ie
-    k Slnku, nedr\u017E\xED teplotn\xFD rekord medzi \nplan\xE9tami slne\u010Dnej
-    s\xFAstavy. Ten patr\xED Venu\u0161i, ktor\xE1 je od Slnka s\xEDce \u010Falej,
-    ale \npanuje na nej siln\xFD sklen\xEDkov\xFD efekt.\r\n\r\nJeho priemer je 38
-    % priemeru Zeme, \u010Do je 1,4-kr\xE1t viac ako priemer Mesiaca. \nMerk\xFAr
-    m\xE1 vysok\xFA hustotu a slab\xE9, no predsa pr\xEDtomn\xE9 magnetick\xE9 pole.
-    \nVytv\xE1ra ho mas\xEDvne kovov\xE9 jadro vo vn\xFAtri plan\xE9ty. Merk\xFAr
-    obieha okolo Slnka \nnajr\xFDchlej\u0161ie zo v\u0161etk\xFDch plan\xE9t, no
-    jeho rot\xE1cia je, naopak, ve\u013Emi pomal\xE1. \nNem\xE1 \u017Eiadny mesiac."
+  m_Text: "Slnko\nPRIEMER: 4 879,4 km\r \n\nSlnko je centr\xE1lna hviezda slne\u010Dnej
+    s\xFAstavy a jedin\xE1 hviezda tejto planet\xE1rnej s\xFAstavy. Je to na\u0161a
+    najbli\u017E\u0161ia hviezda \na z\xE1rove\u0148 najjasnej\u0161ia hviezda na
+    oblohe. Gravita\u010Dn\xE9 p\xF4sobenie Slnka udr\u017Eiava na obe\u017En\xFDch
+    dr\xE1hach okolo Slnka \nv\u0161etky objekty slne\u010Dnej s\xFAstavy vr\xE1tane
+    plan\xE9ty Zem. Jeho energia je nevyhnutn\xE1 pre \u017Eivot na Zemi. \n\r\nSlnko
+    je tvoren\xE9 plazmou, v ktorej s\xFA zast\xFApen\xE9 jadr\xE1 v\u0161etk\xFDch
+    chemick\xFDch prvkov zn\xE1mych aj na Zemi, no s v\xFDraznou \nprevahou vod\xEDka
+    a h\xE9lia. Hmotnos\u0165 Slnka (2\xD71030 kg) predstavuje 99,87 % hmotnosti
+    celej slne\u010Dnej s\xFAstavy. Slnko m\xE1 \npribli\u017Ene 109-kr\xE1t v\xE4\u010D\u0161\xED
+    priemer ako plan\xE9ta Zem. Teplota na jeho povrchu dosahuje pribli\u017Ene 5
+    500\xB0C a ostatn\xE9 \u010Dasti \ntelesa a atmosf\xE9ry Slnka s\xFA e\u0161te
+    teplej\u0161ie. Slnko patr\xED medzi hviezdy hlavnej postupnosti, \u010Do znamen\xE1,
+    \u017Ee v jeho jadre \nprebieha premena vod\xEDka na h\xE9lium a \u017Ee v\u010Faka
+    tomu zost\xE1va dlhodobo stabiln\xE9. Jeho spektr\xE1lny typ je G2, \u010Di\u017Ee
+    ide o \u017Elt\xFA \nhviezdu."
 --- !u!222 &79871183
 CanvasRenderer:
   m_ObjectHideFlags: 0
