@@ -14,12 +14,6 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -64,29 +58,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11442}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11576}
+      Script: {instanceID: 11574}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 11686}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 12138}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12302}
+      Script: {instanceID: 12300}
     - Class: 114
-      Script: {instanceID: 12406}
+      Script: {instanceID: 12404}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12702}
     - Class: 114
-      Script: {instanceID: 13180}
+      Script: {instanceID: 13178}
     - Class: 114
-      Script: {instanceID: 13586}
+      Script: {instanceID: 13584}
     - Class: 114
-      Script: {instanceID: 13620}
+      Script: {instanceID: 13618}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -891,4 +885,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/SolarSystem2.unity
-  playerPath: C:/Users/Koso/Desktop/Checky.apk
+  playerPath: I:/SlnecnaSustava/SolarSystem.apk

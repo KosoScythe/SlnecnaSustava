@@ -84,38 +84,18 @@ public class Teleporting : MonoBehaviour
         if(Physics.Raycast(transform.position, forward, out hit)){
             timeCounter++;
             string hitObject = hit.collider.gameObject.name;
-
-            if (timeCounter == 500){
+            print("DONE DONE DONE");
+            /*if (timeCounter == 100){
                 //Ak idem prvy krat na planetu
                 if (hitObject != currentFocus) {
                     recognizePlanet(hitObject);
                     showText(hitObject);
                 }
-                //chcem zborazit iba modal
-                else {
-                    //ak som v blizkosti planety, zobrazim modal
-                    /*print("CHECK IF I AM OUT OF SIGHT");
-                    float targetX = hit.collider.gameObject.transform.rotation.x;
-                    float targetY = hit.collider.gameObject.transform.rotation.y;
-                    float targetZ = hit.collider.gameObject.transform.rotation.z;
-
-                    float cameraX = Camera.main.transform.rotation.x;
-                    float cameraY = Camera.main.transform.rotation.y;
-                    float cameraZ = Camera.main.transform.rotation.z;
-
-                    int accuracy = 5;
-                    
-                    if ((cameraX <= 2 + accuracy && cameraX >= -2 - accuracy) &&
-                        (cameraY <= -24 + accuracy && cameraY >= -24 - accuracy) &&
-                        (cameraZ <= -2 + accuracy && cameraZ >= -2 - accuracy)){
-                            print("MA NeGgRo");
-                            showText(hitObject);
-                    }
-                    else{
-                        if (currentModal != null) currentModal.SetActive(false);
-                    }*/
+            }*/
+            if (hitObject != currentFocus) {
+                    recognizePlanet(hitObject);
+                    showText(hitObject);
                 }
-            }
         }
         else {
             timeCounter = 0;
